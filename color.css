@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;700&display=swap');
+
+
+main{
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 500px;
+  border: solid 2px black;
+  border-radius: 15px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+}
+
+img:last-child{
+  display: none;
+}
+
+
+
+.info{
+  padding: 34px;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 40px;
+}
+
+h2{
+  font-family: verdana;
+  font-weight: 200;
+  font-size: 20px;
+  color: #888888;
+  letter-spacing: 4px;
+}
+
+p{
+  color: #888888;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+}
+
+
+.precio{
+  margin-top: 20px;
+}
+
+.precio-real{
+  display: inline;
+  font-size: 40px;
+  font-family: Cormorant;
+  font-weight: 700;
+  color: #3A7B3D;
+
+}
+
+.precio-descuento{
+  display: inline;
+  margin-left: 20px;
+  text-decoration: line-through;
+  vertical-align: super;
+  color: #888888;
+}
+
+.btn{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
+  color: #FCFCFD;
+  background-color: #3A7B3D;
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+.btn:hover{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    border: none;
+    color: #FCFCFD;
+    background-color: #1B331C;
+    font-size: 20px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+i{
+  margin-left: 8px;
+}
+
+
+
+@media  (max-width: 360px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 95%;
+
+  }
+
+
+  .imagen{
+    width: 100%;
+  }
+
+  img:first-child{
+    display: none;
+  }
+  img:last-child{
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
